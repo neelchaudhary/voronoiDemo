@@ -141,7 +141,7 @@ class Voronoi:
 
     def check_circle_event(self, i, x0):
         # look for a new circle event for arc i
-        if (i.e is not None) and (i.e.x  <> self.x0):
+        if (i.e is not None) and (i.e.x  is not self.x0):
             i.e.valid = False
         i.e = None
 
